@@ -45,3 +45,6 @@ ln -sf $(pwd)/zsh-conf/.zshrc ~/.zshrc
 
 # Create Symlink for zprofile
 ln -sf $(pwd)/zsh-conf/.zprofile ~/.zprofile
+
+# Clone ZSH Syntax Highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
