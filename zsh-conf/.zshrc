@@ -19,7 +19,8 @@ export CLICOLOR=1
 #################################################################################
 # History
 HISTFILE=~/.zhistory
-HISTSIZE=SAVEHIST=1000
+HISTSIZE=1000
+SAVEHIST=1000
 
 # PATH VARIABLES
 
