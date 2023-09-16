@@ -8,8 +8,8 @@ require('options')
 require('packer')
 require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    -- [[nightfly needs neovim 0.8.0]]
-    use 'bluz71/vim-nightfly-guicolors'
+    -- [[nightfox needs min neovim 0.8.0]]
+    use "EdenEast/nightfox.nvim"
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'nvim-lua/plenary.nvim'

@@ -17,13 +17,16 @@ export CLICOLOR=1
 
 # User configuration
 #################################################################################
+# History
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=1000
 
 # PATH VARIABLES
 
 
 # SOURCES
 source ~/.config/conf-lnx/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source ~/.config/conf-lnx/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh-completion
 autoload -Uz compinit
@@ -59,7 +62,7 @@ setopt PROMPT_SUBST
 setopt menucomplete
 
 # CUSTOM PROMPT
-PROMPT='%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %b%F{red}%(!.#.#>)%F{grey}'
+PROMPT='%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %F{yellow}${vcs_info_msg_0_}%b%F{red}%(!.#.#>)%F{grey}'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -77,6 +80,6 @@ alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 #alias csr="sh /Users/mpro/Documents/Skripte/gen-csr.sh"
 #alias ip2hex="sh /Users/mpro/Documents/Skripte/IpToHex.sh"
 #alias active_nic="sh /Users/mpro/Documents/Skripte/active_nic.sh"
-#alias mtmux="sh /Users/mpro/Documents/Skripte/MPtmux.sh"
+alias mtmux="sh ~/misc/Documents/Scripts/MPtmux.sh"
 #alias home_nas="sh /Users/mpro/Documents/Skripte/wake_home_nas.sh"
 alias python=/usr/local/bin/python3
