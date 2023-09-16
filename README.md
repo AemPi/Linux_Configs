@@ -1,5 +1,7 @@
 ## Personal Linux Config Files
 
+Here are my Personal Config Files wich i use on Ubuntu 22.04 LTS
+
 Clone it into .config Directory
 
 ```Bash
