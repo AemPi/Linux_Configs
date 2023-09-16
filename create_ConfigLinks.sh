@@ -48,3 +48,6 @@ ln -sf $(pwd)/zsh-conf/.zprofile ~/.zprofile
 
 # Clone ZSH Syntax Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
+
+# Clone ZSH Autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx
