@@ -47,7 +47,9 @@ ln -sf $(pwd)/zsh-conf/.zshrc ~/.zshrc
 ln -sf $(pwd)/zsh-conf/.zprofile ~/.zprofile
 
 # Clone ZSH Syntax Highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
+ln -sf $(pwd)/zsh-syntax-highlighting ~/.config/zsh-syntax-highlighting
 
 # Clone ZSH Autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx
+#git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx
+ln -sf $(pwd)/zsh-autosuggestions ~/.config/zsh-autosuggestions
