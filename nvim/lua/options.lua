@@ -28,7 +28,9 @@ opt.smartcase       = true              -- bool: Override ignorecase if search c
 opt.incsearch       = true              -- bool: Use incremental search
 opt.hlsearch        = true              -- bool: Highlight search matches
 opt.list            = false             -- Show some invisible characters
---opt.winbar        = "%{%v:lua.require'winbar'.winbar()%}" -- Set winbar (need´s NeoVim 0.8.0)
+if vim.fn.has('nvim-0.8.0') == 1 then
+  opt.winbar        = "%{%v:lua.require'winbar'.winbar()%}" -- Set winbar (need´s NeoVim 0.8.0)
+end
 
 -- [[ Tab Options ]]
 opt.autoindent      = true

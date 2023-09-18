@@ -5,6 +5,7 @@
 require('statusline')
 require('keymaps')
 require('options')
+require('winbar')
 require('packer')
 require('packer').startup(function()
     use 'wbthomason/packer.nvim'
