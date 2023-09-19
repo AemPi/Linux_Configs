@@ -8,8 +8,9 @@ local cmd               = vim.cmd       -- vim command
 -- [[ COLORSCHEMA ]]
 opt.termguicolors   = true              -- Enable 24-bit RGB colors
 --vim.cmd[[colorscheme darkblue]]       -- Default Colorschema
-vim.cmd("colorscheme nightfox")         -- Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
 vim.g.lightline = { colorscheme = "nightfox" }
+vim.cmd("colorscheme nightfox")         -- Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
+
 
 -- [[ GENERAL ]]
 opt.mouse           = 'a'               -- Enable mouse support
