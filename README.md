@@ -25,15 +25,9 @@ After cloning the Repos execute the 'create_ConfigLinks.sh' Script to link all f
 
 ## NeoVim
 
-For NeoVim in this Repo you need to install/clone Packer
+For NeoVim in this Repo you need to open Neovim wait until Packer and the Plugin are installed
+and reopened Neovim simply with
 
 ```Bash
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+nvim
 ```
-After install/cloning Packer cd into ~/.config/conf-lnx/nvim and open init.lua with nvim Now you can Update Packer with :PackerUpdate
-
-This will install all Addons listed in the init.lua file
-
-### Note
-In some cases you need to Disable the colorschema in ~/.config/conf-lnx/nvim/lua/options.lua. There are two lines for nightfox!
-and enable the default colorschema in the options file.
