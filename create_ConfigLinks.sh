@@ -47,9 +47,17 @@ ln -sf $(pwd)/zsh-conf/.zshrc ~/.zshrc
 ln -sf $(pwd)/zsh-conf/.zprofile ~/.zprofile
 
 # Clone ZSH Syntax Highlighting
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
+if [ ! -d "~/.config/conf-lnx/zsh-syntax-highlighting" ]; then
+  echo "Install zsh-syntax-highlighting ..."
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting
+fi
+
 ln -sf $(pwd)/zsh-syntax-highlighting ~/.config/zsh-syntax-highlighting
 
 # Clone ZSH Autosuggestions
-#git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx
+if [ ! -d "~/.config/conf-lnx/zsh-autosuggestions" ]; then
+  echo "Install zsh-autosuggestions ..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx/zsh-autosuggestions
+fi
+
 ln -sf $(pwd)/zsh-autosuggestions ~/.config/zsh-autosuggestions
