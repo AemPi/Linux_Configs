@@ -74,7 +74,7 @@ ln -sf $(pwd)/zsh-syntax-highlighting ~/.config/zsh-syntax-highlighting
 
 # Clone ZSH Autosuggestions
 if [ ! -d "~/.config/conf-lnx/zsh-autosuggestions" ]; then
-  echo "${Green}[+]${Reset}Install zsh-autosuggestions ..."
+  echo "${Green}[+]${Reset} Install zsh-autosuggestions ..."
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx/zsh-autosuggestions > /dev/null 2>&1
 fi
 
