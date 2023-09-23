@@ -90,6 +90,11 @@ _G.packer_plugins = {
     path = "/home/aempi/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/aempi/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/aempi/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -104,6 +109,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aempi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/aempi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
 
