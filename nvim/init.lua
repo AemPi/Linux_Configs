@@ -45,6 +45,25 @@ require('packer').startup(function(use)
         end,
     }
 
+    -- LSP Plugins
+    use{
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
+
+    -- Neovim Completion
+    use{
+        "hrsh7th/nvim-cmp",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "hrsh7th/cmp-nvim-lsp",
+        "saadparwaiz1/cmp_luasnip",
+        "L3MON4D3/LuaSnip",
+        "rafamadriz/friendly-snippets",
+    }
+
     -- Autopairs for example ([{}])
     use {
         "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} 
@@ -73,3 +92,5 @@ end
 require('statusline')   -- Import Lualine Config file
 require('keymaps')      -- Import Keymaps
 require('options')      -- Import Options and Colorschema
+require('lsp_config')
+require('cmp_config')
