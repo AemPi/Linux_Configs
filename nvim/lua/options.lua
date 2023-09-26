@@ -45,4 +45,4 @@ opt.laststatus      = 2
 --[[ FILE TEMPLATES ]]
 --[[ Inside NeoVim use this command e: test.sh to use the bash Template ]]
 vim.api.nvim_exec([[ autocmd BufNewFile *.sh 0r ~/.config/conf-lnx/nvim/skeletons/bash.sh ]], false)
-vim.api.nvim_exec([[ autocmd BufNewFile *.py 0r ~/.config/conf-lnx/nvim/skeletons/python.sh ]], false)
+vim.api.nvim_exec([[ autocmd BufNewFile *.py 0r ~/.config/conf-lnx/nvim/skeletons/python.py ]], false)
