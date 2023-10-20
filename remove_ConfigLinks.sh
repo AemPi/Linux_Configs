@@ -43,8 +43,4 @@ rm ~/.zshrc
 echo "${Red}[-]${Reset} Remove '.zprofile' softlink .."
 rm ~/.zprofile
 
-echo "${Red}[-]${Reset} Remove 'zsh-syntax-highlighting' Directory softlink .."
-rm ~/.config/zsh-syntax-highlighting
 
-echo "${Red}[-]${Reset} Remove 'zsh-autosuggestions' Directory softlink .."
-rm ~/.config/zsh-autosuggestions

@@ -4,14 +4,13 @@ Here are my Personal Config Files wich i use on Ubuntu 22.04 LTS
 
 ## Install
 
-Clone it into .config Directory
+Clone it into .config/conf-lnx Directory
 
-Example
 ```Bash
 git clone https://github.com/AemPi/Linux_Configs.git ~/.config/conf-lnx
 ```
 
-After cloning the Repo execute the 'create_ConfigLinks.sh' Script to link all files to the right Place.
+After cloning the Repo cd into the ~.config/conf-lnx directory and execute the 'create_ConfigLinks.sh' Script to link all files to the right Place.
 
 ## NeoVim
 
