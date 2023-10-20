@@ -1,0 +1,17 @@
+# Aliases can be placed here
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias name="command"
+# Don´t forget to reload .zshrc with "source .zshrc"
+alias ls="ls --color=auto"
+alias ll="ls -lsahF"
+alias vim="nvim"
+alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
+#alias take_backup="sh /Users/mpro/Documents/Skripte/backup.sh"
+#alias csr="sh /Users/mpro/Documents/Skripte/gen-csr.sh"
+#alias ip2hex="sh /Users/mpro/Documents/Skripte/IpToHex.sh"
+#alias active_nic="sh /Users/mpro/Documents/Skripte/active_nic.sh"
+alias mtmux="sh ~/misc/Documents/Scripts/MPtmux.sh"
+#alias home_nas="sh /Users/mpro/Documents/Skripte/wake_home_nas.sh"
+alias python=/usr/local/bin/python3

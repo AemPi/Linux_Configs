@@ -1,0 +1,9 @@
+# PUT YOUR EXPORTS BELOW
+
+# LS COLORING
+# https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
+#export LSCOLORS=GxBxhxDxbxhxhxhxhxcxcx
+export LSCOLORS=GxfxexDxbxaghfhcabxdbd
+export LS_COLORS
+export CLICOLOR=1
+

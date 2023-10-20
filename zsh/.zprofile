@@ -20,6 +20,7 @@ Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
+# WELCOME MESSAGE
 echo ""
 echo "${Yellow}Welcome Back...${Reset}"
 if ! command -v figlet &> /dev/null
@@ -34,24 +35,25 @@ then
     ${Cyan}https://github.com/AemPi${Reset}
     "
 else
-#   echo "${Cyan}$(echo $(id -un) | $(figlet -f slant) ${Reset}"
-#    echo "${Cyan}"
-#    echo "$(id -un)" | figlet -w 50 -p -f slant
-#    echo "https://github.com/AemPi"
-#    echo "${Reset}"
-#    echo "
-    echo "
-    ${Cyan} █████╗ ███████╗███╗   ███╗██████╗ ██╗${Reset}
-    ${Cyan}██╔══██╗██╔════╝████╗ ████║██╔══██╗██║${Reset}
-    ${Cyan}███████║█████╗  ██╔████╔██║██████╔╝██║${Reset}
-    ${Cyan}██╔══██║██╔══╝  ██║╚██╔╝██║██╔═══╝ ██║${Reset}
-    ${Cyan}██║  ██║███████╗██║ ╚═╝ ██║██║     ██║${Reset}
-    ${Cyan}╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝${Reset}
-    ${Cyan}https://github.com/AemPi${Reset}
-    "
+    echo "${Cyan} $(echo $(id -un) | $(figlet -f slant)) ${Reset}"
+    echo "${Cyan}"
+    echo "$($(id -un) | $(figlet -w 50 -p -f slant))"
+    echo "https://github.com/AemPi"
+    echo "${Reset}"
 
 fi
 
 uptime=`uptime -p`
 echo "${Yellow}Uptime: $uptime ${Reset}"
 echo "${Cyan}######################################################${Reset}"
+
+# EXPORTS
+#####################
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# zsh config dir
+export ZDOTDIR=$HOME/.config/conf-lnx/zsh

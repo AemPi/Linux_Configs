@@ -57,26 +57,10 @@ ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
 echo "${Green}[+]${Reset} Create '.zshrc' softlink .."
 # Create Symlink for zshrc
-ln -sf $(pwd)/zsh-conf/.zshrc ~/.zshrc
+ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
 
 echo "${Green}[+]${Reset} Create '.zprofile' softlink .."
 # Create Symlink for zprofile
-ln -sf $(pwd)/zsh-conf/.zprofile ~/.zprofile
+ln -sf $(pwd)/zsh/.zprofile ~/.zprofile
 
-# Clone ZSH Syntax Highlighting
-if [ ! -d "~/.config/conf-lnx/zsh-syntax-highlighting" ]; then
-  echo "${Green}[+]${Reset} Install zsh-syntax-highlighting ..."
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/conf-lnx/zsh-syntax-highlighting > /dev/null 2>&1
-fi
 
-echo "${Green}[+]${Reset} Create 'zsh-syntax-highlighting' Directory softlink .."
-ln -sf $(pwd)/zsh-syntax-highlighting ~/.config/zsh-syntax-highlighting
-
-# Clone ZSH Autosuggestions
-if [ ! -d "~/.config/conf-lnx/zsh-autosuggestions" ]; then
-  echo "${Green}[+]${Reset} Install zsh-autosuggestions ..."
-  git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/conf-lnx/zsh-autosuggestions > /dev/null 2>&1
-fi
-
-echo "${Green}[+]${Reset} Create 'zsh-autosuggestions' Directory softlink .."
-ln -sf $(pwd)/zsh-autosuggestions ~/.config/zsh-autosuggestions

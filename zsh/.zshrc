@@ -9,25 +9,22 @@
 # Maintainer:   Markus Pröpper (AemPi)
 #########################################################
 
-# https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
-#export LSCOLORS=GxBxhxDxbxhxhxhxhxcxcx
-export LSCOLORS=GxfxexDxbxaghfhcabxdbd
-export LS_COLORS
-export CLICOLOR=1
-
 # User configuration
 #################################################################################
-# History
+# HISTORY FILE
 HISTFILE=~/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
 
-# PATH VARIABLES
+# FUNCTIONS
+source "$ZDOTDIR/zsh-functions"
 
+# PLUGINS
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 
-# SOURCES
-source ~/.config/conf-lnx/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.config/conf-lnx/zsh-autosuggestions/zsh-autosuggestions.zsh
+# NORMAL FILES SOURCES
+zsh_add_file "zsh-aliases"
 
 # zsh-completion
 autoload -Uz compinit
@@ -62,25 +59,20 @@ setopt PROMPT_SUBST
 # Show completion on first TAB
 setopt menucomplete
 
-# CUSTOM PROMPT
-PROMPT='%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %F{yellow}${vcs_info_msg_0_}%b%F{red}%(!.#.#>)%F{grey}'
+# PROMPT DESIGN - DEFAULT IS oneline
+#####################################
+#PROMPT_ALTERNATIVE=oneline
+PROMPT_ALTERNATIVE=twoline
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# Don´t forget to reload .zshrc with "source .zshrc"
-alias ls="ls --color=auto"
-alias ll="ls -lsahF"
-alias vim="nvim"
-alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
-#alias take_backup="sh /Users/mpro/Documents/Skripte/backup.sh"
-#alias csr="sh /Users/mpro/Documents/Skripte/gen-csr.sh"
-#alias ip2hex="sh /Users/mpro/Documents/Skripte/IpToHex.sh"
-#alias active_nic="sh /Users/mpro/Documents/Skripte/active_nic.sh"
-alias mtmux="sh ~/misc/Documents/Scripts/MPtmux.sh"
-#alias home_nas="sh /Users/mpro/Documents/Skripte/wake_home_nas.sh"
-alias python=/usr/local/bin/python3
+case "$PROMPT_ALTERNATIVE" in
+    oneline)
+        PROMPT='%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %F{yellow}${vcs_info_msg_0_}%b%F{red}%(!.#.#>)%F{grey}'
+    ;;
+    twoline)
+        PROMPT='%F{red}╭─%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %F{yellow}${vcs_info_msg_0_}%b 
+%F{red}╰─%F{red}%(!.#.#>)%F{grey}'
+        ;;
+    *)
+        PROMPT='%F{red}%}[%F{cyan}%n%F{white}@%F{green}%m%F{red}] %F{cyan}(%~) %F{yellow}${vcs_info_msg_0_}%b%F{red}%(!.#.#>)%F{grey}'
+    ;;
+esac
