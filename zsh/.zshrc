@@ -22,6 +22,7 @@ source "$ZDOTDIR/zsh-functions"
 # PLUGINS
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "sunlei/zsh-ssh"
 
 # NORMAL FILES SOURCES
 zsh_add_file "zsh-aliases"
