@@ -35,10 +35,8 @@ then
     ${Cyan}https://github.com/AemPi${Reset}
     "
 else
-    echo "${Cyan} $(echo $(id -un) | $(figlet -f slant)) ${Reset}"
-    echo "${Cyan}"
-    echo "$($(id -un) | $(figlet -w 50 -p -f slant))"
-    echo "https://github.com/AemPi"
+    echo "${Cyan} $(figlet -f slant "$(id -un)") ${Reset}"
+    echo "${Cyan} https://github.com/AemPi ${Reset}"
     echo "${Reset}"
 
 fi

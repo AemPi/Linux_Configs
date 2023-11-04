@@ -43,24 +43,38 @@ Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
 
-echo "${Green}[+]${Reset} Create '.tmux.conf' softlink .."
+echo -e "${Green}[+]${Reset} Create '.tmux.conf' softlink .."
 # Create Symlink for Tmux Config
 ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 
-echo "${Green}[+]${Reset} Create 'nvim' Directory softlink .."
+echo -e "${Green}[+]${Reset} Create 'nvim' Directory softlink .."
 # Create Symlink for vimrc
 ln -sf $(pwd)/nvim ~/.config/nvim
 
-echo "${Green}[+]${Reset} Create '.vimrc' softlink .."
+echo -e "${Green}[+]${Reset} Create '.vimrc' softlink .."
 # Create Symlink for vimrc
 ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
-echo "${Green}[+]${Reset} Create '.zshrc' softlink .."
+echo -e "${Green}[+]${Reset} Create '.zshrc' softlink .."
 # Create Symlink for zshrc
 ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
 
-echo "${Green}[+]${Reset} Create '.zprofile' softlink .."
+echo -e "${Green}[+]${Reset} Create '.zprofile' softlink .."
 # Create Symlink for zprofile
 ln -sf $(pwd)/zsh/.zprofile ~/.zprofile
 
-
+# Check for figlet Packet
+echo # New Line
+echo -e "${Yellow}[?]${Reset} Check if 'figlet' is installed ..."
+if [[ ! $(sudo pacman -Ss figlet | grep "extra/figlet" | grep "Install") ]]
+then
+    echo -e "${Red}[-]${Reset} figlet is not installed (required for .zprofile).."
+    read -p "${Yellow}[?]${Reset} Install figlet? (Y/N): " -n 1 -r
+    echo # For new line
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo -e "${Green}[+]${Reset} Installing Packet 'figlet' ..."
+        sudo pacman -S figlet 
+    fi
+else
+    echo -e "${Green}[+]${Reset} already installed!"
+fi
