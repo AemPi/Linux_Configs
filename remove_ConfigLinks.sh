@@ -43,4 +43,17 @@ rm ~/.zshrc
 echo "${Red}[-]${Reset} Remove '.zprofile' softlink .."
 rm ~/.zprofile
 
-
+echo # New Line
+echo -e "${Yellow}[?]${Reset} Check if 'figlet' is installed ..."
+if [[ $(sudo pacman -Ss figlet | grep "extra/figlet" | grep "Install") ]]
+then
+    echo -e "${Red}[-]${Reset} figlet is installed ..."
+    read -p "${Yellow}[?]${Reset} Removing figlet? (Y/N): " -n 1 -r
+    echo # For new line
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo -e "${Green}[+]${Reset} removing Packet 'figlet' ..."
+        sudo pacman --remove figlet 
+    fi
+else
+    echo -e "${Green}[+]${Reset} not installed!"
+fi
