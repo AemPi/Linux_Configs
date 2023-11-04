@@ -1,6 +1,8 @@
 ## Personal Linux Config Files
 
-Here are my Personal Config Files wich i use on Ubuntu 22.04 LTS
+Here are my Personal Config Files wich i use on Manjaro Linux
+
+Feel free to fork and customize it ;)
 
 ## Install
 
@@ -11,6 +13,7 @@ git clone https://github.com/AemPi/Linux_Configs.git ~/.config/conf-lnx
 ```
 
 After cloning the Repo cd into the ~.config/conf-lnx directory and execute the 'create_ConfigLinks.sh' Script to link all files to the right Place.
+The Script is created for Arch Based Distros with the pacman Packetmanager!
 
 ## NeoVim
 
