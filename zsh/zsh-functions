@@ -18,3 +18,14 @@ zsh_add_plugin ()
         source "$ZDOTDIR/.zshrc"
     fi
 }
+
+zsh_update_plugin ()
+{
+    
+    #PLUGINS="$(find $ZDOTDIR/plugins/ -maxdepth 1 -type d | grep "zsh-" )"
+    
+    for PLUGIN in $(find $ZDOTDIR/plugins/ -mindepth 1 -maxdepth 1 -type d)
+    do
+        echo -n "$(basename $PLUGIN)"; echo -n "... "; git -C "$PLUGIN/" pull
+    done
+}
