@@ -15,3 +15,4 @@ alias active_nic="sh ~/Dokumente/Scripts/Linux_Scripts//active_nic.sh"
 alias mtmux="sh ~/Dokumente/Scripts/Linux_Scripts/MPtmux.sh"
 alias home_nas="sh ~/Dokumente/Scripts/Linux_Scripts//wake_home_nas.sh"
 alias python=/usr/local/bin/python3
+alias minicom="minicom -con"
