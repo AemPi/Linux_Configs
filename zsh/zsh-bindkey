@@ -1,0 +1,20 @@
+#####################################
+# This file configures keyboard input for programs using readline.
+#
+# To know the code of a key, execute cat, press enter, press the key, then Ctrl+C.
+#
+# For me, Home sends ^[[H and End ^[[F, so i can put i my .zshrc in my home dir
+#
+# bindkey  "^[[H"   beginning-of-line
+# bindkey  "^[[F"   end-of-line
+# bindkey  "^[[3~"  delete-char
+#
+# These codes could change with the terminal emulator you use.
+#
+# autoload zkbd ; zkbd will create a file with an array of keycodes to use, like bindkey  "${key[Home]}" beginning-of-line, and you can source a different file depending on the terminal.
+######################################
+
+bindkey  "^[[3~"  delete-char
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+

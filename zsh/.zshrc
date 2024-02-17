@@ -29,6 +29,7 @@ zsh_add_plugin "sunlei/zsh-ssh"
 
 # NORMAL FILES SOURCES
 zsh_add_file "zsh-aliases"
+zsh_add_file "zsh-bindkey"
 
 # zsh-completion
 autoload -Uz compinit
