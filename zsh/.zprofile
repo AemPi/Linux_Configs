@@ -38,7 +38,6 @@ else
     echo "${Cyan} $(figlet -f slant "$(id -un)") ${Reset}"
     echo "${Cyan} https://github.com/AemPi ${Reset}"
     echo "${Reset}"
-
 fi
 
 uptime=`uptime -p`

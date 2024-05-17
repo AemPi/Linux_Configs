@@ -28,7 +28,7 @@ opt.ignorecase      = true              -- bool: Ignore case in search patterns
 opt.smartcase       = true              -- bool: Override ignorecase if search contains capitals
 opt.incsearch       = true              -- bool: Use incremental search
 opt.hlsearch        = true              -- bool: Highlight search matches
-opt.list            = true             -- Show some invisible characters
+opt.list            = false             -- Show some invisible characters
 opt.listchars       = { space = '.', tab = '>~'} -- Show Whitespaces/Tabs with dots etc.
 if vim.fn.has('nvim-0.8.0') == 1 then
   opt.winbar        = "%{%v:lua.require'winbar'.winbar()%}" -- Set winbar (need´s NeoVim 0.8.0)
