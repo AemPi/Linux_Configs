@@ -7,7 +7,7 @@ local cmd               = vim.cmd       -- vim command
 
 -- [[ COLORSCHEMA ]]
 opt.termguicolors   = true              -- Enable 24-bit RGB colors
-local usercolor     = "nightfox"        -- Default darkblue, Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
+local usercolor     = "tokyonight-night"        -- Default darkblue, Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
 vim.g.lightline = { colorscheme = usercolor }
 vim.cmd("colorscheme " .. usercolor)
 
