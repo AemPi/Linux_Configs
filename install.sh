@@ -6,7 +6,7 @@
 # / ___ /  __/ / / / / / ____/ /
 #/_/  |_\___/_/ /_/ /_/_/   /_/
 #
-# Filename:     create_ConfigLinks.sh
+# Filename:     install.sh
 # Github:       https://github.com/AemPi/Linux_Configs.git
 # Maintainer:   Markus Pröpper (AemPi)
 #########################################################
@@ -67,18 +67,3 @@ echo -e "${Green}[+]${Reset} Create '.zprofile' softlink .."
 # Create Symlink for zprofile
 ln -sf $(pwd)/zsh/.zprofile ~/.zprofile
 
-# Check for figlet Packet
-echo # New Line
-echo -e "${Yellow}[?]${Reset} Check if 'figlet' is installed ..."
-if [[ ! $(sudo pacman -Ss figlet | grep "extra/figlet" | grep "Install") ]]
-then
-    echo -e "${Red}[-]${Reset} figlet is not installed (required for .zprofile).."
-    read -p "${Yellow}[?]${Reset} Install figlet? (Y/N): " -n 1 -r
-    echo # For new line
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        echo -e "${Green}[+]${Reset} Installing Packet 'figlet' ..."
-        sudo pacman -S figlet 
-    fi
-else
-    echo -e "${Green}[+]${Reset} already installed!"
-fi
