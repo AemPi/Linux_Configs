@@ -12,7 +12,7 @@ Feel free to fork and customize it ;)
 sudo pacman -S git neovim htop tmux kitty ttf-victor-mono-nerd zsh figlet fzf
 ```
 
-Your Shell need to run as login shell in your Terminal for example:  /usr/bin/zsh --login
+and your Shell need to run as login shell in your Terminal for example:  /usr/bin/zsh --login
 
 If the requirements are given then Clone the repo into .config/conf-lnx Directory
 
@@ -20,7 +20,7 @@ If the requirements are given then Clone the repo into .config/conf-lnx Director
 git clone https://github.com/AemPi/Linux_Configs.git ~/.config/conf-lnx
 ```
 
-After cloning the Repo cd into the ~.config/conf-lnx directory and execute the 'install.sh' Script to link all files to the right Place.
+After cloning the Repo cd into the ~/.config/conf-lnx directory and execute the 'install.sh' Script to link all files to the right Place.
 The Script is created for Arch Based Distros with the pacman Packetmanager!
 
 ## NeoVim
