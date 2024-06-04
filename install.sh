@@ -52,8 +52,12 @@ echo -e "${Green}[+]${Reset} Create 'nvim' Directory softlink .."
 ln -sf $(pwd)/nvim ~/.config/nvim
 
 echo -e "${Green}[+]${Reset} Create 'kitty' Directory softlink .."
-# Create Symlink for vimrc
+# Create Symlink for kitty
 ln -sf $(pwd)/kitty ~/.config/kitty
+
+echo -e "${Green}[+]${Reset} Create 'fastfetch' Directory softlink .."
+# Create Symlink for fastfetch
+ln -sf $(pwd)/fastfetch ~/.config/fastfetch
 
 echo -e "${Green}[+]${Reset} Create '.vimrc' softlink .."
 # Create Symlink for vimrc
