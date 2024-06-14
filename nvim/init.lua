@@ -31,7 +31,8 @@ require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'     -- Lualine Statusline
     use 'kyazdani42/nvim-web-devicons'  -- Web Dev Icons
     use 'nvim-lua/plenary.nvim'         -- 
-    
+    use 'mbbill/undotree'               -- Undotree 
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.3',
         -- or                            , branch = '0.1.x',
