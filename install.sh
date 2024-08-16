@@ -71,3 +71,7 @@ echo -e "${Green}[+]${Reset} Create '.zprofile' softlink .."
 # Create Symlink for zprofile
 ln -sf $(pwd)/zsh/.zprofile ~/.zprofile
 
+echo -e "${Green}[+]${Reset} Create '.wezterm.lua' softlink .."
+# Create Symlink for zprofile
+ln -sf $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
+

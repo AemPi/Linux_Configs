@@ -9,7 +9,7 @@ Feel free to fork and customize it ;)
 ### Required Packages
 
 ```Bash
-sudo pacman -S git neovim htop tmux kitty ttf-victor-mono-nerd zsh figlet fzf fastfetch
+sudo pacman -S git neovim htop tmux wezterm ttf-victor-mono-nerd zsh figlet fzf fastfetch
 ```
 
 and your Shell need to run as login shell in your Terminal for example:  /usr/bin/zsh --login

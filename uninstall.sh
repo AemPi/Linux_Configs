@@ -49,3 +49,6 @@ rm ~/.zshrc
 echo "${Red}[-]${Reset} Remove '.zprofile' softlink .."
 rm ~/.zprofile
 
+echo "${Red}[-]${Reset} Remove '.wezterm.lua' softlink .."
+rm ~/.wezterm.lua
+
