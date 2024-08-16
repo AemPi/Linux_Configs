@@ -34,15 +34,18 @@ then
     ${Cyan}╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝${Reset}
     ${Cyan}https://github.com/AemPi${Reset}
     "
-else
+elif command -v fastfetch &> /dev/null
+then 
+    fastfetch
+else 
     echo "${Cyan} $(figlet -f slant "$(id -un)") ${Reset}"
     echo "${Cyan} https://github.com/AemPi ${Reset}"
     echo "${Reset}"
-fi
 
-uptime=`uptime -p`
-echo "${Yellow}Uptime: $uptime ${Reset}"
-echo "${Cyan}######################################################${Reset}"
+    uptime=`uptime -p`
+    echo "${Yellow}Uptime: $uptime ${Reset}"
+    echo "${Cyan}######################################################${Reset}"
+fi
 
 # EXPORTS
 #####################
