@@ -33,6 +33,10 @@ config.window_padding = {
   bottom = '0cell', --default is 0.5
 }
 
+--[[ CURSOR ]]
+config.default_cursor_style = 'BlinkingBlock'
+config.cursor_blink_rate = 400
+
 --[[ Custom Keybindings ]]
 config.keys = {
     -- copy/paste --
