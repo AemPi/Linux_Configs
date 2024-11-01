@@ -6,10 +6,11 @@ local opt               = vim.opt       -- Set options (opt/opt/windows-scoped)
 local cmd               = vim.cmd       -- vim command
 
 -- [[ COLORSCHEMA ]]
-opt.termguicolors   = true              -- Enable 24-bit RGB colors
-local usercolor     = "tokyonight-night"        -- Default darkblue, Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
-vim.g.lightline = { colorscheme = usercolor }
-vim.cmd("colorscheme " .. usercolor)
+opt.termguicolors   = true                  -- Enable 24-bit RGB colors
+--local usercolor     = "tokyonight-night"  -- Default darkblue, Carbonfox, Dawnfox, Dayfox, Duskfox, Nightfox, Nordfox, Terafox
+local usercolor     = "catppuccin-mocha"    -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+global.lightline = { colorscheme = usercolor }
+cmd("colorscheme " .. usercolor)
 
 
 -- [[ GENERAL ]]

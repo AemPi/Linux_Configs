@@ -55,6 +55,10 @@ echo -e "${Green}[+]${Reset} Create 'kitty' Directory softlink .."
 # Create Symlink for kitty
 ln -sf $(pwd)/kitty ~/.config/kitty
 
+echo -e "${Green}[+]${Reset} Create 'Wofi' Directory softlink .."
+# Create Symlink for Wofi
+ln -sf $(pwd)/wofi ~/.config/wofi
+
 echo -e "${Green}[+]${Reset} Create 'fastfetch' Directory softlink .."
 # Create Symlink for fastfetch
 ln -sf $(pwd)/fastfetch ~/.config/fastfetch

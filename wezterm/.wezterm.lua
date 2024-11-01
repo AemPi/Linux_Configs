@@ -10,10 +10,14 @@ local act = wezterm.action
 --[[ CONFIG ]]
 -- This is where you actually apply your config choices
 config.automatically_reload_config = true
+config.max_fps = 144
+config.animation_fps = 1
+config.term = "xterm-256color" -- Set the terminal type
 
 --[[ COLORSCHEME ]]
 -- changing font and the color scheme:
-config.color_scheme = 'Tokyo Night Storm'
+-- config.color_scheme = 'Tokyo Night Storm'
+config.color_scheme = 'Catppuccin Mocha'
 
 --[[ FONT ]]
 --config.font = wezterm.font("VictorMono Nerd Font")
@@ -33,6 +37,9 @@ config.window_padding = {
   bottom = '0cell', --default is 0.5
 }
 
+config.initial_rows = 30
+config.initial_cols = 150
+
 --[[ CURSOR ]]
 config.default_cursor_style = 'BlinkingBlock'
 config.cursor_blink_rate = 400
@@ -45,6 +52,53 @@ config.keys = {
 
    -- Ctrl-click will open the link under the mouse cursor
    --{ event = { Up = { streak = 1, button = 'Left' } }, mods = 'CTRL', action = act.OpenLinkAtMouseCursor},
+
+   
+   {
+    -- Split to Horizontal Pane
+    key = '+',
+    mods = 'ALT',
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+  },
+  {
+    -- Split to Vertical Pane
+    key = '-',
+    mods = 'ALT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+  },
+  {
+    -- Close current Pane or Tab
+    key = 'q',
+    mods = 'ALT',
+    action = wezterm.action.CloseCurrentPane { confirm = true },
+  },
+  -- Resize Panes
+  {
+    key = 'h',
+    mods = 'ALT',
+    action = act.AdjustPaneSize { 'Left', 5 },
+  },
+  {
+    key = 'j',
+    mods = 'ALT',
+    action = act.AdjustPaneSize { 'Down', 5 },
+  },
+  { 
+    key = 'k', 
+    mods = 'ALT', 
+    action = act.AdjustPaneSize { 'Up', 5 } 
+  },
+  {
+    key = 'l',
+    mods = 'ALT',
+    action = act.AdjustPaneSize { 'Right', 5 },
+  },
+  -- Create new Tab
+  {
+    key = 't',
+    mods = 'SHIFT|ALT',
+    action = act.SpawnTab 'CurrentPaneDomain',
+  },
 }
 
 --[[ Custom Mouse Bindings ]]

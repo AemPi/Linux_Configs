@@ -28,6 +28,7 @@ require('packer').startup(function(use)
     -- Custom Plugins
     use "EdenEast/nightfox.nvim"        -- [[nightfox needs min neovim 0.8.0]]
     use "folke/tokyonight.nvim"         -- [[colorschema tokyonight needs min neovim 0.8.0]]
+    use "catppuccin/nvim"               -- [[colorschema catppuccin]]
     use 'nvim-lualine/lualine.nvim'     -- Lualine Statusline
     use 'kyazdani42/nvim-web-devicons'  -- Web Dev Icons
     use 'nvim-lua/plenary.nvim'         -- 

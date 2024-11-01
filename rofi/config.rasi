@@ -9,7 +9,7 @@ configuration{
     modi: "drun,window,filebrowser";
     icon-theme: "Papirus-Dark";
     show-icons: true;
-    terminal: "alacritty";
+    terminal: "wezterm";
     drun-display-format: "{icon} {name}";
     run-display-format: "{icon} {name}";
     location: 0;
