@@ -37,6 +37,9 @@ rm ~/.config/nvim
 echo "${Red}[-]${Reset} Remove 'kitty' Directory softlink .."
 rm ~/.config/kitty
 
+echo "${Red}[-]${Reset} Remove 'Wofi' Directory softlink .."
+rm ~/.config/wofi
+
 echo "${Red}[-]${Reset} Remove 'fastfetch' Directory softlink .."
 rm ~/.config/fastfetch
 
