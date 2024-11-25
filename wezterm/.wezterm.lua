@@ -53,10 +53,10 @@ config.keys = {
    -- Ctrl-click will open the link under the mouse cursor
    --{ event = { Up = { streak = 1, button = 'Left' } }, mods = 'CTRL', action = act.OpenLinkAtMouseCursor},
 
-   
+
    {
     -- Split to Horizontal Pane
-    key = '+',
+    key = '.',
     mods = 'ALT',
     action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
@@ -83,10 +83,10 @@ config.keys = {
     mods = 'ALT',
     action = act.AdjustPaneSize { 'Down', 5 },
   },
-  { 
-    key = 'k', 
-    mods = 'ALT', 
-    action = act.AdjustPaneSize { 'Up', 5 } 
+  {
+    key = 'k',
+    mods = 'ALT',
+    action = act.AdjustPaneSize { 'Up', 5 }
   },
   {
     key = 'l',
@@ -98,6 +98,27 @@ config.keys = {
     key = 't',
     mods = 'SHIFT|ALT',
     action = act.SpawnTab 'CurrentPaneDomain',
+  },
+  -- Switch Panes
+  {
+    key = 'h',
+    mods = 'SHIFT',
+    action = act.ActivatePaneDirection 'Left',
+  },
+  {
+    key = 'l',
+    mods = 'SHIFT',
+    action = act.ActivatePaneDirection 'Right',
+  },
+  {
+    key = 'k',
+    mods = 'SHIFT',
+    action = act.ActivatePaneDirection 'Up',
+  },
+  {
+    key = 'j',
+    mods = 'SHIFT',
+    action = act.ActivatePaneDirection 'Down',
   },
 }
 
