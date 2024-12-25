@@ -102,22 +102,22 @@ config.keys = {
   -- Switch Panes
   {
     key = 'h',
-    mods = 'SHIFT',
+    mods = 'CTRL',
     action = act.ActivatePaneDirection 'Left',
   },
   {
     key = 'l',
-    mods = 'SHIFT',
+    mods = 'CTRL',
     action = act.ActivatePaneDirection 'Right',
   },
   {
     key = 'k',
-    mods = 'SHIFT',
+    mods = 'CTRL',
     action = act.ActivatePaneDirection 'Up',
   },
   {
     key = 'j',
-    mods = 'SHIFT',
+    mods = 'CTRL',
     action = act.ActivatePaneDirection 'Down',
   },
 }

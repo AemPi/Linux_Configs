@@ -8,8 +8,13 @@ luasnip.config.setup {}
 cmp.setup {
   snippet = {
     expand = function(args)
-      luasnip.lsp_expand(args.body)
+      --luasnip.lsp_expand(args.body)
+      require('luasnip').lsp_expand(args.body)
     end,
+  },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert {
     ['<C-n>'] = cmp.mapping.select_next_item(),
@@ -41,8 +46,31 @@ cmp.setup {
     end, { 'i', 's' }),
   },
   sources = {
+    { name = 'nvim_lua'},
     { name = 'nvim_lsp' },
+    { name = 'path' },
     { name = 'luasnip' },
+    { name = 'buffer', keyword_length = 5 },
+  },
+
+  formatting = {
+    fields = {'menu', 'abbr', 'kind'},
+    format = function (entry, item)
+        local menu_icon = {
+            nvim_lsp = '[LSP]',
+            luasnip = '[SNIP]',
+            buffer = '[BUF]',
+            path = '[PATH]',
+        }
+        item.menu = menu_icon[entry.source.name]
+        return item
+    end
   },
 }
+
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+  require('lspconfig')['lua_ls'].setup {
+    capabilities = capabilities
+  }
 
