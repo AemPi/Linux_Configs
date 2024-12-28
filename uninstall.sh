@@ -40,6 +40,9 @@ rm ~/.config/kitty
 echo "${Red}[-]${Reset} Remove 'Wofi' Directory softlink .."
 rm ~/.config/wofi
 
+echo "${Red}[-]${Reset} Remove 'Ghostty' Directory softlink .."
+rm ~/.config/ghostty
+
 echo "${Red}[-]${Reset} Remove 'fastfetch' Directory softlink .."
 rm ~/.config/fastfetch
 

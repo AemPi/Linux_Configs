@@ -43,39 +43,43 @@ Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
 
-echo -e "${Green}[+]${Reset} Create '.tmux.conf' softlink .."
 # Create Symlink for Tmux Config
+echo -e "${Green}[+]${Reset} Create '.tmux.conf' softlink .."
 ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 
-echo -e "${Green}[+]${Reset} Create 'nvim' Directory softlink .."
 # Create Symlink for vimrc
+echo -e "${Green}[+]${Reset} Create 'nvim' Directory softlink .."
 ln -sf $(pwd)/nvim ~/.config/nvim
 
-echo -e "${Green}[+]${Reset} Create 'kitty' Directory softlink .."
 # Create Symlink for kitty
+echo -e "${Green}[+]${Reset} Create 'kitty' Directory softlink .."
 ln -sf $(pwd)/kitty ~/.config/kitty
 
-echo -e "${Green}[+]${Reset} Create 'Wofi' Directory softlink .."
 # Create Symlink for Wofi
+echo -e "${Green}[+]${Reset} Create 'Wofi' Directory softlink .."
 ln -sf $(pwd)/wofi ~/.config/wofi
 
-echo -e "${Green}[+]${Reset} Create 'fastfetch' Directory softlink .."
+# Create Symlink for Ghostty
+echo -e "${Green}[+]${Reset} Create 'Ghostty' Directory softlink .."
+ln -sf $(pwd)/ghostty ~/.config/ghostty
+
 # Create Symlink for fastfetch
+echo -e "${Green}[+]${Reset} Create 'fastfetch' Directory softlink .."
 ln -sf $(pwd)/fastfetch ~/.config/fastfetch
 
-echo -e "${Green}[+]${Reset} Create '.vimrc' softlink .."
 # Create Symlink for vimrc
+echo -e "${Green}[+]${Reset} Create '.vimrc' softlink .."
 ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
-echo -e "${Green}[+]${Reset} Create '.zshrc' softlink .."
 # Create Symlink for zshrc
+echo -e "${Green}[+]${Reset} Create '.zshrc' softlink .."
 ln -sf $(pwd)/zsh/.zshrc ~/.zshrc
 
-echo -e "${Green}[+]${Reset} Create '.zprofile' softlink .."
 # Create Symlink for zprofile
+echo -e "${Green}[+]${Reset} Create '.zprofile' softlink .."
 ln -sf $(pwd)/zsh/.zprofile ~/.zprofile
 
+# Create Symlink for wezterm
 echo -e "${Green}[+]${Reset} Create '.wezterm.lua' softlink .."
-# Create Symlink for zprofile
 ln -sf $(pwd)/wezterm/.wezterm.lua ~/.wezterm.lua
 
