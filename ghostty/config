@@ -14,7 +14,7 @@ theme                         = catppuccin-mocha
 # Font
 ##############################################
 # font-family                 = VictorMono Nerd Font
-font-size                     = 11
+font-size                     = 9
 
 # Window appearance
 # NOTE: macos-titlebar-style TESTING!
