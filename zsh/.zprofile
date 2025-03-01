@@ -50,13 +50,13 @@ fi
 # EXPORTS
 #####################
 # Set Default Editor
-if command -v nvim; then
+if command -v nvim > /dev/null 2>&1; then
     export VISUAL=nvim
     export EDITOR="$VISUAL"
-elif command -v vim; then
+elif command -v vim > /dev/null 2>&1; then
     export VISUAL=vim
     export EDITOR="$VISUAL"
-elif command -v vi; then
+elif command -v vi > /dev/null 2>&1; then
     export VISUAL=vi
     export EDITOR="$VISUAL"
 else
