@@ -16,3 +16,4 @@ alias mtmux="sh ~/Dokumente/Scripts/Linux_Scripts/MPtmux.sh"
 alias home_nas="sh ~/Dokumente/Scripts/Linux_Scripts//wake_home_nas.sh"
 alias python=/usr/local/bin/python3
 alias minicom="minicom -con"
+alias update-mirrors="sudo pacman-mirrors --fasttrack=5 && pamac upgrade --force-refresh --no-aur && pamac upgrade --aur"
