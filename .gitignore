@@ -1,3 +1,8 @@
 zsh/plugins/
 zsh/.zcompdump
 nvim/plugin/
+./fastfetch/fastfetch
+./wofi/wofi
+./ghostty/ghostty
+./nvim/nvim
+./kitty/kitty
