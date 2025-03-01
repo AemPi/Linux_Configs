@@ -19,27 +19,29 @@ font-size                     = 11
 # Window appearance
 # NOTE: macos-titlebar-style TESTING!
 ##############################################
-macos-titlebar-style          = tabs
+#macos-titlebar-style          = tabs
 gtk-wide-tabs                 = false
-gtk-adwaita                   = false
-term                          = xterm-ghostty
+gtk-adwaita                   = true
+#gtk-titlebar                  = false
+term                          = xterm-256color
+window-theme                  = system
+window-decoration             = true
 window-save-state             = never
 window-height                 = 30
 window-width                  = 120
-background-opacity            = 0.9
+background-opacity            = 0.8
 background-blur-radius        = 25
 unfocused-split-opacity       = 0.85
-gtk-titlebar                  = false
-quit-after-last-window-closed = true
+quit-after-last-window-closed = false
 
 # shell-integration
 ##############################################
 shell-integration             = zsh
+shell-integration-features    = no-cursor
 command                       = /usr/bin/zsh -l
 
 # Cursor
 ##############################################
-shell-integration-features    = no-cursor
 cursor-style                  = block
 cursor-style-blink            = true
 cursor-color                  = 74c7ec

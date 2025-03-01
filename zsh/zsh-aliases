@@ -8,7 +8,7 @@ alias ls="ls --color=auto"
 alias ll="ls -lsahF"
 alias vim="nvim"
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
-alias take_backup="sh ~/Dokumente/Scripts/Linux_Scripts/backup.sh"
+alias make_backup="sh ~/Dokumente/Scripts/Linux_Scripts/backup.sh"
 alias csr="sh ~/Dokumente/Scripts/Linux_Scripts/gen-csr.sh"
 alias ip2hex="sh ~/Dokumente/Scripts/Linux_Scripts//IpToHex.sh"
 alias active_nic="sh ~/Dokumente/Scripts/Linux_Scripts//active_nic.sh"
