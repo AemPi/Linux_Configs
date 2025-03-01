@@ -49,6 +49,21 @@ fi
 
 # EXPORTS
 #####################
+# Set Default Editor
+if command -v nvim; then
+    export VISUAL=nvim
+    export EDITOR="$VISUAL"
+elif command -v vim; then
+    export VISUAL=vim
+    export EDITOR="$VISUAL"
+elif command -v vi; then
+    export VISUAL=vi
+    export EDITOR="$VISUAL"
+else
+    export VISUAL=nano
+    export EDITOR="$VISUAL"   
+fi
+
 
 # XDG Paths
 export XDG_CONFIG_HOME=$HOME/.config
