@@ -55,6 +55,10 @@ ln -sf $(pwd)/nvim ~/.config/nvim
 echo -e "${Green}[+]${Reset} Create 'kitty' Directory softlink .."
 ln -sf $(pwd)/kitty ~/.config/kitty
 
+# Create Symlink for rofi
+echo -e "${Green}[+]${Reset} Create 'rofi' Directory softlink .."
+ln -sf $(pwd)/rofi ~/.config/rofi
+
 # Create Symlink for Wofi
 echo -e "${Green}[+]${Reset} Create 'Wofi' Directory softlink .."
 ln -sf $(pwd)/wofi ~/.config/wofi
