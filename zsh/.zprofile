@@ -35,7 +35,8 @@ then
     ${Cyan}https://github.com/AemPi${Reset}
     "
 elif command -v fastfetch &> /dev/null
-then 
+then
+    sleep 1
     fastfetch
 else 
     echo "${Cyan} $(figlet -f slant "$(id -un)") ${Reset}"

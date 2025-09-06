@@ -56,6 +56,7 @@ copy-on-select                = clipboard
 # Terminal
 ##############################################
 scrollback-limit              = 10000
+app-notifications             = no-clipboard-copy
 
 # Clipboard interaction
 ##############################################
