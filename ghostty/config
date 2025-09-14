@@ -34,7 +34,7 @@ background-opacity            = 0.95
 unfocused-split-opacity       = 0.85
 quit-after-last-window-closed = false
 #fullscreen                    = true
-maximize                      = true
+maximize                      = false
 
 # shell-integration
 ##############################################
