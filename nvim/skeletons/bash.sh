@@ -10,4 +10,3 @@
 # Github:       https://github.com/AemPi
 # Maintainer:   Markus Pröpper (AemPi)
 #########################################################
-

@@ -31,9 +31,6 @@ opt.incsearch       = true              -- bool: Use incremental search
 opt.hlsearch        = true              -- bool: Highlight search matches
 opt.list            = false             -- Show some invisible characters
 opt.listchars       = { space = '.', tab = '>~'} -- Show Whitespaces/Tabs with dots etc.
-if vim.fn.has('nvim-0.8.0') == 1 then
-  opt.winbar        = "%{%v:lua.require'winbar'.winbar()%}" -- Set winbar (need´s NeoVim 0.8.0)
-end
 
 -- [[ Tab Options ]]
 opt.autoindent      = true
@@ -48,3 +45,5 @@ opt.laststatus      = 2
 --[[ Inside NeoVim use this command e: test.sh to use the bash Template ]]
 vim.api.nvim_exec([[ autocmd BufNewFile *.sh 0r ~/.config/conf-lnx/nvim/skeletons/bash.sh ]], false)
 vim.api.nvim_exec([[ autocmd BufNewFile *.py 0r ~/.config/conf-lnx/nvim/skeletons/python.py ]], false)
+
+
