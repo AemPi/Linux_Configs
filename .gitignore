@@ -6,3 +6,4 @@ nvim/plugin/
 ./ghostty/ghostty
 ./nvim/nvim
 ./kitty/kitty
+nvim/lazy-lock.json
